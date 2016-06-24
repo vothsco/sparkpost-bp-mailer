@@ -1,2 +1,2 @@
-# sparkpost_bp_mailer
-Integrate Sparkpost with the BuddyPress 2.5 Email API
+# SparkPost BP Mailer
+Integrate SparkPost with the BuddyPress 2.5 Email API
