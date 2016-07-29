@@ -17,9 +17,9 @@
 defined( 'ABSPATH' ) || exit;
 
 function sp_bp_phpmailer_class_override() {
-	require dirname( __FILE__ ) . '/classes/class-sp-bp-mailer.php';
+	require_once dirname( __FILE__ ) . '/classes/class-sp-bp-mailer.php';
 error_log('*******************************mailer**********************');
 	return 'SP_BP_PHPMailer';
-} 
+}
 
 add_filter( 'bp_send_email_delivery_class', 'sp_bp_phpmailer_class_override');
