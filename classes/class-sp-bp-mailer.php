@@ -31,6 +31,8 @@ class SP_BP_PHPMailer extends BP_PHPMailer {
 			if ( ! class_exists( 'PHPMailer' ) ) {
 				require_once ABSPATH . WPINC . '/class-phpmailer.php';
 				require_once ABSPATH . WPINC . '/class-smtp.php';
+				require_once dirname( __FILE__ ) . '/classes/class-http-mailer.php';
+				require_once dirname( __FILE__ ) . '/classes/class-smtp-mailer.php';
 			}
 
 			//$phpmailer = new PHPMailer( true );
